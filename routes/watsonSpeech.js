@@ -11,8 +11,8 @@ const keywords = require("./keywords");
 const watson = require('watson-developer-cloud');
 const NormalizedResponse = require('./normalizedResponse');
 const SpeakerStream = require('./speaker-stream');
-const watsonUsername = "85228eb7-fcf6-4a8b-852b-dbacd73904ae";
-const watsonPassword = "SvwquH2lrF4s";
+const watsonUsername = "watson-username-here";
+const watsonPassword = "watson-password-here";
 
 const stt_params = {
     continuous: true,
