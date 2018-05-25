@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tracking.js - face with camera</title>
+
+  <script src="javascripts/tracking-min.js"></script>
+  <script src="data/face-min.js"></script>
+   <script src="javascripts/dat.gui.min.js"></script>
+   <script src="/javascripts/jquery-1.11.1.min.js"></script>
+  
+
+  <script src="javascripts/binary.js"></script>
+
+  <style>
+  video, #canvas {
+    margin-left: 230px;
+    margin-top: 90px;
+    position: absolute;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="demo-frame">
+    <div class="demo-container">
+      <video id="video" width="640" height="480" preload autoplay loop muted></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+  </div>
+      <canvas id="canvas-write" style="display: none; clear: both;"></canvas>
+
+  <script>
+    window.onload = function() {
+      var video = document.getElementById('video');
+      var canvas = document.getElementById('canvas');
+      var writeCanvas = document.getElementById('canvas-write');
+      var context = canvas.getContext('2d');
+      var writeContext = writeCanvas.getContext('2d');
+      var clientPort;
+
+
+      console.log(writeCanvas.width)
+      var faces = [];
+
+      var tracker = new tracking.ObjectTracker('face');
+      tracker.setInitialScale(4);
+      tracker.setStepSize(2);
+      tracker.setEdgesDensity(0.1);
+
+      tracking.track('#video', tracker, { camera: true });
+
+      
+      $.getJSON( "https://" + location.hostname + ":" + location.port + "/cv/test-session-123456789", function( data ) {
+          clientPort = data.port;
+          track();
+      });
+
+      var socket;
+      var captureInterval;
+      function track() {
+        socket = new BinaryClient('wss://' + location.hostname + ":" + clientPort);
+        addWSListeners();
+        captureInterval = setInterval(function() {
+          //clearInterval(captureInterval);
+          context.drawImage(video, 0, 0, canvas.width, canvas.height);
+          //socket.send({image: canvas.toDataURL('image/png')});
+           canvas.toBlob(function(blob) {
+             //console.log(socket.streams);
+               socket.send(blob, {image: true});
+               //socket.close();
+               //track();
+           },'image/png');
+        }, 10000);
+      }
+
+      //connect to node via websocket
+      
+      function addWSListeners() {
+        socket.on('message', function (message) {
+          console.log(message);
+        });
+
+        socket.on('facesResults', function (data) {
+          console.log(data);
+        });
+      }
+
+    };
+  </script>
+
+</body>
+</html>

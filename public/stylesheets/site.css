@@ -1,0 +1,75 @@
+#canvas-container{
+    margin-top: 20px;
+    border: 1px dashed lightblue;
+    align-content: center;
+    width: 600px;
+}
+#canvas{
+    margin: 0px !important;
+    height: 90px;
+    width: 100%;
+}
+#transcript{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#transcriptWatson{
+    min-height: 40px;
+    align-content: left;
+}
+#transcriptGoogle{
+    min-height: 40px;
+    align-content: left;
+}
+#lastUtterenceWatson{
+    min-height: 40px;
+    align-content: left;
+}
+#lastUtterenceGoogle{
+    min-height: 40px;
+    align-content: left;
+}
+#speakers{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#keywords{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#semantics{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#pos{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#lastUtterence{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+}
+#results{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+H3 {
+    margin-left: 20px;
+}
+speakerLabel{
+    font-weight: bold;
+}

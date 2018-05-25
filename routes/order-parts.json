@@ -1,0 +1,188 @@
+{
+    "'": [
+        "\""
+    ],
+    "\"": [
+        "\""
+    ],
+    "yes": [
+        "AFFIRMATIVE_RESPONSE"
+    ],
+    "no": [
+        "NEGATIVE_RESPONSE",
+        "MODIFY_ITEM_REMOVE",
+        "REMOVE_FROM_ORDER"
+    ],
+    "yup": [
+        "AFFIRMATIVE_RESPONSE"
+    ],
+    "nope": [
+        "NEGATIVE_RESPONSE"
+    ],
+    "affirmative": [
+        "AFFIRMATIVE_RESPONSE"
+    ],
+    "negative": [
+        "NEGATIVE_RESPONSE"
+    ],
+    "a": [
+        "QTY",
+        "ADD_TO_ORDER"
+    ],
+    "an": [
+        "QTY",
+        "ADD_TO_ORDER"
+    ],
+    "one": [
+        "QTY"
+    ],
+    "two": [
+        "QTY"
+    ],
+    "three": [
+        "QTY"
+    ],
+    "four": [
+        "QTY"
+    ],
+    "five": [
+        "QTY"
+    ],
+    "six": [
+        "QTY"
+    ],
+    "seven": [
+        "QTY"
+    ],
+    "eight": [
+        "QTY"
+    ],
+    "nine": [
+        "QTY"
+    ],
+    "ten": [
+        "QTY"
+    ],
+    "eleven": [
+        "QTY"
+    ],
+    "twelve": [
+        "QTY"
+    ],
+    "hamburger": [
+        "FOOD_ITEM"
+    ],
+    "hamburgers": [
+        "FOOD_ITEM"
+    ],
+    "cheeseburger": [
+        "FOOD_ITEM"
+    ],
+    "cheeseburgers": [
+        "FOOD_ITEM"
+    ],
+    "fry": [
+        "FOOD_SIDE"
+    ],
+    "fries": [
+        "FOOD_SIDE"
+    ],
+    "french-fries": [
+        "FOOD_SIDE"
+    ],
+    "french-fry": [
+        "FOOD_SIDE"
+    ],
+    "salt": [
+        "CONDIMENT"
+    ],
+    "pepper": [
+        "CONDIMENT"
+    ],
+    "ketchup": [
+        "CONDIMENT"
+    ],
+    "mayo": [
+        "CONDIMENT"
+    ],
+    "mustard": [
+        "CONDIMENT"
+    ],
+    "barbeque-sauce": [
+        "CONDIMENT"
+    ],
+    "lettuce": [
+        "CONDIMENT"
+    ],
+    "bun": [
+        "TOPPING"
+    ],
+    "bread": [
+        "TOPPING"
+    ],
+    "cheese": [
+        "TOPPING"
+    ],
+    "tomato": [
+        "TOPPING"
+    ],
+    "tomatoes": [
+        "TOPPING"
+    ],
+    "pickle": [
+        "TOPPING"
+    ],
+    "pickles": [
+        "TOPPING"
+    ],
+    "onion": [
+        "TOPPING"
+    ],
+    "onions": [
+        "TOPPING"
+    ],
+    "large": [
+        "SIZE"
+    ],
+    "coke": [
+        "DRINK"
+    ],
+    "with": [
+        "MODIFY_ITEM_ADD",
+        "ADD_TO_ORDER"
+    ],
+    "add": [
+        "MODIFY_ITEM_ADD",
+        "ADD_TO_ORDER"
+    ],
+    "and": [
+        "MODIFY_ITEM_ADD",
+        "ADD_TO_ORDER",
+        "X"
+    ],
+    "extra": [
+        "MODIFY_ITEM_EXTRA"
+    ],
+    "double": [
+        "MODIFY_ITEM_EXTRA",
+        "DOUBLE"
+    ],
+    "triple": [
+        "MODIFY_ITEM_EXTRA",
+        "TRIPLE"
+    ],
+    "hold": [
+        "MODIFY_ITEM_REMOVE",
+        "REMOVE_FROM_ORDER"
+    ],
+    "hold-the": [
+        "MODIFY_ITEM_REMOVE",
+        "REMOVE_FROM_ORDER"
+    ],
+    "light": [
+        "MODIFY_ITEM_SPECIAL"
+    ],
+    "easy": [
+        "MODIFY_ITEM_SPECIAL"
+    ]
+}

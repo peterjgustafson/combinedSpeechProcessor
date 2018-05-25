@@ -1,0 +1,14 @@
+option_settings:
+    - namespace: aws:elasticbeanstalk:command
+      option_name: Timeout
+      value: 1000
+      
+commands:
+    01-installgyp:
+        env:
+            PATH: /sbin:/bin:/usr/sbin:/usr/bin:/opt/aws/bin:/opt/elasticbeanstalk/node-install/node-v6.11.1-linux-x64/bin/
+        command: npm install -g node-pre-gyp@latest
+    02-installgrpc:
+        env:
+            PATH: /sbin:/bin:/usr/sbin:/usr/bin:/opt/aws/bin:/opt/elasticbeanstalk/node-install/node-v6.11.1-linux-x64/bin/
+        command: npm install -g grpc@latest

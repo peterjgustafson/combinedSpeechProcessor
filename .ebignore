@@ -1,0 +1,6 @@
+node_modules/
+recordings/
+.idea
+.vscode
+node_modules.bak/
+.git

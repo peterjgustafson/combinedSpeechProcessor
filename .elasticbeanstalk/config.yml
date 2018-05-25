@@ -1,0 +1,16 @@
+branch-defaults:
+  default:
+    environment: SttDemo-env
+global:
+  application_name: stt-demo
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js
+  default_region: us-east-2
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: null
+  sc: null
+  workspace_type: Application
